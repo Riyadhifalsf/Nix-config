@@ -29,6 +29,27 @@
       timeout = 10;
     };
 
+  # Aktifkan binder & ashmem (WAJIB)
+  boot.kernelModules = [ "binder_linux" "ashmem_linux" ];
+
+  # Waydroid service
+  virtualisation.waydroid.enable = true;
+
+boot.kernel.sysctl = {
+  "kernel.unprivileged_userns_clone" = 1;
+};
+
+  # Waydroid butuh iptables (bukan nft doang)
+  networking.nftables.enable = false;
+  networking.firewall.enable = false;
+
+
+
+
+
+  # Optional: kalau pakai Wayland (Hyprland, GNOME, dll)
+  services.dbus.enable = true;
+
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
@@ -54,7 +75,7 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma 6 Desktop Environment.
-  services.displayManager..enable = true;
+  services.displayManager.enable = true;
   services.desktopManager.gnome.enable = true;
   
   # Set Flutter
@@ -167,6 +188,9 @@
 	mesa-demos
 	android-tools
 	docker
+
+    iptables
+    dnsmasq
   ];
   
   # Steam 
