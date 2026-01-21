@@ -8,10 +8,13 @@
 		../../modules/core/users.nix
 		../../modules/core/packages.nix
 		../../modules/core/locale.nix
+		../../modules/core/keymap.nix
 		../../modules/core/nixpkgs-config.nix
 		../../modules/core/samba-config.nix	
 
 		../../modules/programs/zsh.nix
+
+		../../modules/display-manager.nix		
 
 		../../modules/desktop/gnome.nix
 		# ../../modules/desktop/hyprland.nix
