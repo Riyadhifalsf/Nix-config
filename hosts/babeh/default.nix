@@ -9,6 +9,8 @@
 		../../modules/core/packages.nix
 		../../modules/core/locale.nix
 		../../modules/core/keymap.nix
+		../../modules/core/cups.nix
+		../../modules/core/flatpak.nix
 		../../modules/core/nixpkgs-config.nix
 		../../modules/core/samba-config.nix	
 
