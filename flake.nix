@@ -11,8 +11,9 @@
         system = "x86_64-linux";
         modules = [
           # ./configuration.nix
-	  ./hosts/babeh/default.nix
+	       ./hosts/babeh/default.nix
         ];
+        
       };
     };
   };

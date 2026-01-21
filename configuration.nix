@@ -44,7 +44,6 @@ boot.kernel.sysctl = {
   networking.firewall.enable = false;
 
 
-
 <<<<<<< HEAD
 
 =======
