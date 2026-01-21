@@ -8,6 +8,7 @@
 		../../modules/core/users.nix
 		../../modules/core/packages.nix
 		../../modules/core/locale.nix
+		../../modules/core/nixpkgs-config.nix	
 
 		../../modules/programs/zsh.nix
 

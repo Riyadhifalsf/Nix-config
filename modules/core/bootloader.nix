@@ -10,7 +10,6 @@
     device = "nodev";
     efiSupport = true;
     useOSProber = true;
-    timeout = 10;
 
     theme = "${
       (pkgs.fetchFromGitHub {
@@ -20,6 +19,8 @@
         hash = "sha256-wTr5S/17uwQXkWwElqBKIV1J3QUP6W2Qx2Nw0SaM7Qk=";
       })
     }/Sekiro";
+    boot.loader.timeout = 10;
+
   };
 };
 		
