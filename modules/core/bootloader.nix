@@ -4,7 +4,7 @@
 
    boot.loader = {
   efi.canTouchEfiVariables = true;
-
+   timeout = 10;  
   grub = {
     enable = true;
     device = "nodev";
@@ -19,7 +19,6 @@
         hash = "sha256-wTr5S/17uwQXkWwElqBKIV1J3QUP6W2Qx2Nw0SaM7Qk=";
       })
     }/Sekiro";
-    boot.loader.timeout = 10;
 
   };
 };
