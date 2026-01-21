@@ -19,7 +19,6 @@
         bitwarden-desktop
         vscode
         spotify
-        virt-manager
         obsidian
         telegram-desktop
         bottles
