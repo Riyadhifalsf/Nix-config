@@ -19,7 +19,7 @@
         home-manager.nixosModules.home-manager
 
         # Baru konfigurasi user Home Manager
-        ./home-manager/babeh.nix
+         ./home-manager/babeh.nix
         ];
         
       };
