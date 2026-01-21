@@ -15,9 +15,11 @@
 	       ./hosts/babeh/default.nix
 
 
-    		# Home Manager integration
-          home-manager.nixosModules.home-manager
-          ./home/babeh.nix
+    		 # Home Manager module dulu
+        home-manager.nixosModules.home-manager
+
+        # Baru konfigurasi user Home Manager
+        ./home-manager/babeh.nix
         ];
         
       };
